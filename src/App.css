@@ -1,1 +1,42 @@
+.calculator {
+  width: 359px;
+  height: 400px;
+  display: grid;
+  grid-template-areas:
+  'result result result result'
+  'AC plusnsub percentage division '
+  'seven eight nine multi'
+  'four five six substract'
+  'one two three  plus'
+  'zeroo zeroo dott equal'
+  ;
+}
+
+
+.result{grid-area: result;}
+.AC{grid-area: AC;}
+.plusnsub{grid-area: plusnsub;}
+.percentage{grid-area: percentage;}
+.division{grid-area: division;}
+.seven{grid-area: seven;}
+.eight{grid-area: eight;}
+.nine{grid-area: nine;}
+.multi{grid-area: multi;}
+.four{grid-area: four;}
+.five{grid-area: five;}
+.six{grid-area: six;}
+.substract{grid-area: substract;}
+.one{grid-area: one;}
+.two{grid-area: two;}
+.three{grid-area: three;}
+.plus{grid-area: plus;}
+.zeroo{grid-area: zeroo;}
+.dott{grid-area: dott;}
+.equal{grid-area: equal;}
+
+button{border: 1px solid #e2e2e2;}
+
+.orange{
+  background-color: orange;
+}
 
