@@ -1,39 +1,58 @@
-.App {
-  text-align: center;
+.calculator {
+  width: 359px;
+  height: 400px;
+  display: grid;
+  grid-template-areas:
+    'result result result result'
+    'AC plusnsub percentage division '
+    'seven eight nine multi'
+    'four five six substract'
+    'one two three  plus'
+    'zeroo zeroo dott equal';
+  box-shadow: 3px 5px 6px 0 #696969bd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result {
+  grid-area: result;
+  background-color: #858693;
+  color: #fff;
+  margin: 0;
+}
+.AC { grid-area: AC; }
+.plusnsub { grid-area: plusnsub; }
+.percentage { grid-area: percentage; }
+.division { grid-area: division; }
+.seven { grid-area: seven; }
+.eight { grid-area: eight; }
+.nine { grid-area: nine; }
+.multi { grid-area: multi; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.substract { grid-area: substract; }
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.plus { grid-area: plus; }
+.zeroo { grid-area: zeroo; }
+.dott { grid-area: dott; }
+.equal { grid-area: equal; }
+
+button {
+  border: 0.5px solid #e2e2e2;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.orange {
+  background-color: orange;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.result p {
+  margin: 0;
+  text-align: end;
+  position: relative;
+  padding-right: 15px;
+  top: 33px;
+  font-size: 20px;
 }
