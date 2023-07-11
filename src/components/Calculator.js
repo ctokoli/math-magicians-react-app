@@ -1,7 +1,7 @@
 function Calculator() {
   return (
     <div className="calculator">
-      <p className="result">0</p>
+      <div className="result"><p>0</p></div>
       <button type="button" className="AC">AC</button>
       <button type="button" className="plusnsub">+/-</button>
       <button type="button" className="percentage">%</button>

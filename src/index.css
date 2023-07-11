@@ -3,4 +3,10 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  background-color:#ad99ff;
+  background-image:
+  radial-gradient(at 78% 33%, hsla(296,81%,72%,1) 0px, transparent 50%),
+  radial-gradient(at 9% 87%, hsla(270,99%,63%,1) 0px, transparent 50%),
+  radial-gradient(at 60% 36%, hsla(328,75%,61%,1) 0px, transparent 50%),
+  radial-gradient(at 20% 12%, hsla(321,99%,72%,1) 0px, transparent 50%);
 }
