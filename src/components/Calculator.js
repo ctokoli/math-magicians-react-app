@@ -21,7 +21,7 @@ function Calculator() {
         <Buttons
           classN={value.class}
           onclick={(e) => buttonHandler(e.target.textContent)}
-          text={value.key}
+          input={value.key}
           key={value.id}
         />
       ))}
