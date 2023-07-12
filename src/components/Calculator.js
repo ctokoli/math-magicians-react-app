@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import buttons from '../util/keyboard';
 
 function Calculator() {
   const [result, setResult] = useState({
@@ -15,6 +16,9 @@ function Calculator() {
   return (
     <div className="calculator">
       <div className="result"><p>{result.next || result.operation || result.total || '0'}</p></div>
+        {buttons.map((button) => {
+          
+        })}
       <button type="button" className="AC" onClick={(e) => buttonHandler(e.target.textContent)}>AC</button>
       <button type="button" className="plusnsub" onClick={(e) => buttonHandler(e.target.textContent)}>+/-</button>
       <button type="button" className="percentage" onClick={(e) => buttonHandler(e.target.textContent)}>%</button>
