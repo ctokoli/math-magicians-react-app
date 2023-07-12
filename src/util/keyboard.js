@@ -91,7 +91,7 @@ const btn = [
   },
   {
     id: 19,
-    key: '.',
+    key: '=',
     class: 'equal orange',
   },
 
