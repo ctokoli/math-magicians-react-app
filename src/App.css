@@ -40,7 +40,7 @@
 
 button {
   border: 0.5px solid #e2e2e2;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -54,5 +54,5 @@ button {
   position: relative;
   padding-right: 15px;
   top: 33px;
-  font-size: 20px;
+  font-size: 22px;
 }
