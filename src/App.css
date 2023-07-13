@@ -56,3 +56,16 @@ button {
   top: 33px;
   font-size: 22px;
 }
+
+.quotes {
+  width: 329px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.quotes h4 {
+  color: #434343;
+  line-height: 1.4;
+}
