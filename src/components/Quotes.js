@@ -30,8 +30,8 @@ function DisplayQuotes() {
   useEffect(() => {
     fetchQuotes();
   }, []);
-  if (loading) return <div><h2>Loading.....</h2></div>;
-  if (error) return <div><p>{error}</p></div>;
+  if (loading) return <div className="loading quotes"><h2>Loading.....</h2></div>;
+  if (error) return <div className="error quotes"><p>{error}</p></div>;
   return (
     <div>
       {data.map((item, index) => (
