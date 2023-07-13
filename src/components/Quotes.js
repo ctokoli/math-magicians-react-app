@@ -10,7 +10,13 @@ function DisplayQuotes() {
   const fetchQuotes = async () => {
     setLoading(true);
     try {
-      const response = await fetch(QUOTES_API);
+      const response = await fetch(QUOTES_API, {
+        method: 'GET',
+        headers: {
+          'X-Api-Key': 'xPGkbZwR3P+7JQcvJeRqHA==SHtlGkR1v3cEpAw2',
+        },
+        contentType: 'application/json',
+      });
       const quotes = await response.json();
       console.log(quotes);
       setData(quotes);
