@@ -30,8 +30,17 @@ function DisplayQuotes() {
   useEffect(() => {
     fetchQuotes();
   }, []);
+  if (loading) return <div><h2>Loading.....</h2></div>;
+  if (error) return <div><p>{error}</p></div>;
   return (
-    <div>eee</div>
+    <div>
+      {data.map((item, index) => (
+        <div key={1} className="quotes">
+          <h4>{item.quote}</h4>
+          <p>{item.author}</p>
+        </div>
+      ))}
+    </div>
   );
 }
 
