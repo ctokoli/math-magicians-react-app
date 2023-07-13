@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { QUOTES_API, API_KEYS } from '../util/fetchAPI';
 
@@ -18,10 +17,8 @@ function DisplayQuotes() {
         contentType: 'application/json',
       });
       const quotes = await response.json();
-      console.log(quotes);
       setData(quotes);
     } catch (error) {
-      console.log(error);
       setError(error);
     }
 
@@ -34,7 +31,7 @@ function DisplayQuotes() {
   if (error) return <div className="error quotes"><p>{error}</p></div>;
   return (
     <div>
-      {data.map((item, index) => (
+      {data.map((item) => (
         <div key={1} className="quotes">
           <h4>{item.quote}</h4>
           <p>{item.author}</p>
