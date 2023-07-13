@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
-import QUOTES_API from '../util/fetchAPI';
+import { QUOTES_API, API_KEYS } from '../util/fetchAPI';
 
 function DisplayQuotes() {
   const [data, setData] = useState({});
@@ -13,7 +13,7 @@ function DisplayQuotes() {
       const response = await fetch(QUOTES_API, {
         method: 'GET',
         headers: {
-          'X-Api-Key': 'xPGkbZwR3P+7JQcvJeRqHA==SHtlGkR1v3cEpAw2',
+          'X-Api-Key': API_KEYS,
         },
         contentType: 'application/json',
       });
