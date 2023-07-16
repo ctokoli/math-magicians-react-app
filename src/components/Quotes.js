@@ -29,16 +29,18 @@ function DisplayQuotes() {
   }, []);
   if (loading) return <div className="loading quotes"><h2>Loading.....</h2></div>;
   if (error) return <div className="error quotes"><p>{error}</p></div>;
-  return (
-    <div>
-      {data.map((item) => (
-        <div key={1} className="quotes">
-          <h4>{item.quote}</h4>
-          <p>{item.author}</p>
-        </div>
-      ))}
-    </div>
-  );
+  if (data) {
+    return (
+      <div>
+        {data.map((item) => (
+          <div key={1} className="quotes">
+            <h4>{item.quote}</h4>
+            <p>{item.author}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default DisplayQuotes;
