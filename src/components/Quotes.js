@@ -41,7 +41,6 @@ function DisplayQuotes() {
       </div>
     );
   }
-  return (<div className="error quotes"><p>Error....</p></div>);
 }
 
 export default DisplayQuotes;
