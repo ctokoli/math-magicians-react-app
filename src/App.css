@@ -1,3 +1,7 @@
+div#root {
+  height: 100vh;
+}
+
 .calculator {
   width: 359px;
   height: 400px;
@@ -70,8 +74,34 @@ button {
   line-height: 1.4;
 }
 
+h2{
+  margin: 0px;
+  padding-left: 20px;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
   width: 721px;
+  margin: 20px 0;
+  border-radius: 30px;
+
 }
+
+ul{
+  display: flex;
+}
+
+ul li {
+  padding: 0 20px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+
+
