@@ -69,3 +69,9 @@ button {
   color: #434343;
   line-height: 1.4;
 }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 721px;
+}
