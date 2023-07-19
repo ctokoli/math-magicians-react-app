@@ -64,7 +64,7 @@ button {
 }
 
 .quotes {
-  width: 329px;
+  width: 630px;
   background: #fff;
   padding: 15px;
   border-radius: 5px;
@@ -105,4 +105,16 @@ ul li a {
   text-decoration: none;
   color: midnightblue;
   font-weight: bold;
+}
+
+.home {
+  background-color: #fff;
+  padding: 20px;
+  width: 630px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.home-head{
+  padding-left: 0;
 }
