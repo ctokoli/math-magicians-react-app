@@ -1,5 +1,6 @@
 div#root {
   height: 100vh;
+  font-family: 'Roboto', serif;
 }
 
 .calculator {
@@ -14,6 +15,7 @@ div#root {
     'one two three  plus'
     'zeroo zeroo dott equal';
   box-shadow: 3px 5px 6px 0 #696969bd;
+  margin: 0 auto;
 }
 
 .result {
@@ -66,7 +68,7 @@ button {
   background: #fff;
   padding: 15px;
   border-radius: 5px;
-  margin-top: 10px;
+  margin: 0 auto;
 }
 
 .quotes h4 {
