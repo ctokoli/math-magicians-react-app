@@ -1,5 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Components Testing Should test for the HomePage component 1`] = `
+<div
+  className="home"
+>
+  <h2
+    className="home-head"
+  >
+    This is the home page
+  </h2>
+  <p>
+    Step into a world of comfort, warmth, and hospitality. We are thrilled to extend a heartfelt welcome to you on our home page.
+  </p>
+</div>
+`;
+
+exports[`Components Testing Should test for the Quotes component 1`] = `
+<div
+  className="loading quotes"
+>
+  <h2>
+    Loading.....
+  </h2>
+</div>
+`;
+
 exports[`Components Testing Should test for the calculator component 1`] = `
 <div
   className="calculator"
@@ -144,5 +169,41 @@ exports[`Components Testing Should test for the calculator component 1`] = `
   >
     =
   </button>
+</div>
+`;
+
+exports[`Components Testing Should test for the layout component 1`] = `
+<div
+  className="menu"
+>
+  <h2>
+    Math magicians
+  </h2>
+  <ul>
+    <li>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quotes"
+        onClick={[Function]}
+      >
+        Qoutes
+      </a>
+    </li>
+  </ul>
 </div>
 `;
