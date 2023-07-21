@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import Calculator from '../components/calculator';
+import Calculator from '../components/Calculator';
 import HomePage from '../components/Home';
 import LayoutPage from '../components/Layout';
 import DisplayQuotes from '../components/Quotes';
